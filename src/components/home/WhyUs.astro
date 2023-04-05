@@ -2,24 +2,26 @@
 import { Icon } from 'astro-icon'
 ---
 
-<section class='min-h-[calc(100vh-68px)] flex items-center border-b border-border py-14'>
+<section class='min-h-[calc(100vh-68px)] flex items-center border-b border-border py-14' id='portfolio'>
   <div class='text-center hide'>
     <div class='dark:bg-dark-3 px-4 py-1 rounded-lg font-bold w-max mx-auto mb-3'>
       <span class='[-webkit-background-clip:text] bg-gradient-to-tr from-main-3 via-main-4 to-main-2 text-transparent'>
-        Why Us ?
+        We have worked on some Groundbreaking Ideas
       </span>
     </div>
-    <div class='flex items-center flex-col sm:flex-row'>
+    <div class='flex items-center flex-col sm:flex-row space-y-8 lg:space-x-20'>
       <div class='flex-1'>
-        <h2 class='text-4xl font-bold mb-6 dark:text-white text-black'>Elevate Your Digital Presence</h2>
-        <p class='text-lg mb-8'>
-          reminiscelabs is the perfect partner for all your website and application design & development needs, with a
-          set of intuitive tools and creative professionals to enable you to build a website or app that looks and
-          functions just how you imagined.
+        <h2 class='text-4xl font-bold mb-6 dark:text-white text-black'>VR Science Labs for<br>Refugee Education</h2>
+        <p class='text-lg text-justify mb-8'>
+          Backed by MIT, Cambridge University, UNHCR, and Founder Institute, project aiyin was an initiative that helped NGOs bring virtual science labs to refugees they served. Out of 148 countries and 3500 companies in the world, it was hailed as one of the best education solutions in the world for peace and justice.
+
         </p>
       </div>
-      <div class='flex-1'>
-        <Icon name='whyus' class='h-56 sm:h-96' />
+      <!-- <div class='flex-1'>
+        <Icon name='Refugees.png' class='h-56 sm:h-96' />
+      </div> -->
+      <div class='flex-[1]'>
+        <img src='/Refugees.png' class='h-56 sm:h-96' />
       </div>
     </div>
   </div>

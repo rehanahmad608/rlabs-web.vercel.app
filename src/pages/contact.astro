@@ -15,14 +15,13 @@ import { Icon } from 'astro-icon'
       <div class='bg-light-1 dark:bg-dark-4 py-5 px-8 rounded-lg hover:-translate-y-1 duration-300'>
         <Icon name='mdi:phone' class='h-10 w-10 text-main-1 mb-2' />
         <h2 class='text-black dark:text-white font-semibold text-lg mb-2'>Contact Phone Number</h2>
-        <p>UK: <a href='tel:+447724510122' class='hover:text-main-1 hover:underline'>+44 772 4510122</a></p>
-        <p>Pakistan: <a href='tel:+923125137702' class='hover:text-main-1 hover:underline'>+92 312 5137702</a></p>
+        <p>Pakistan: <a href='tel:+923315027962' class='hover:text-main-1 hover:underline'>+92 331 5027962</a></p>
       </div>
       <div class='bg-light-1 dark:bg-dark-4 py-5 px-8 rounded-lg hover:-translate-y-1 duration-300'>
         <Icon name='mdi:email' class='h-10 w-10 text-main-1 mb-2' />
         <h2 class='text-black dark:text-white font-semibold text-lg mb-2'>Email Address</h2>
-        <a href='mailto:reminiscelabsinfo@gmail.com' class='hover:text-main-1 hover:underline'
-          >reminiscelabsinfo@gmail.com</a
+        <a href='contact@rlabs.xr' class='hover:text-main-1 hover:underline'
+          >contact@rlabs.xr</a
         >
       </div>
       <div class='bg-light-1 dark:bg-dark-4 py-5 px-8 rounded-lg hover:-translate-y-1 duration-300'>
@@ -35,7 +34,7 @@ import { Icon } from 'astro-icon'
           <a href='/' target='_blank' aria-label='twitter'>
             <Icon name='mdi:twitter' class='h-6 w-6' />
           </a>
-          <a href='https://www.linkedin.com/company/reminiscelabs/' target='_blank' aria-label='linkedin'>
+          <a href='/' target='_blank' aria-label='linkedin'>
             <Icon name='mdi:linkedin' class='h-6 w-6' />
           </a>
           <a href='/' target='_blank' aria-label='instagram'>
@@ -120,7 +119,7 @@ import { Icon } from 'astro-icon'
     document.getElementById('btnLoading').classList.remove('hidden')
     document.getElementById('btnText').classList.add('hidden')
     try {
-      const res = await fetch('https://reminiscelabs-backend.vercel.app/api/email', {
+      const res = await fetch('/', {
         method: 'post',
         headers: {
           'Content-Type': 'application/json',

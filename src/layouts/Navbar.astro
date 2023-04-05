@@ -5,7 +5,7 @@ import { Icon } from 'astro-icon'
 <nav class='fixed w-full top-0 z-10 bg-light-1 dark:bg-dark-1 border-b border-border'>
   <div class='flex items-center justify-between px-4 xl:max-w-6xl 2xl:max-w-7xl lg:max-w-4xl md:max-w-2xl mx-auto'>
     <a href='/' class='py-4 flex items-center space-x-0.5'>
-      <div class='text-black dark:text-white text-3xl font-bold'>
+      <div class='text-black dark:text-white text-3xl'>
         reminisce<span
           class='[-webkit-background-clip:text] bg-gradient-to-tr from-main-3 via-main-4 to-main-2 text-transparent'
           >labs</span
@@ -13,18 +13,20 @@ import { Icon } from 'astro-icon'
       </div>
     </a>
     <ul class='flex space-x-6 items-center'>
-      <li class='hidden lg:block'><a href='/' class='py-4 px-2 font-semibold hover:text-main-1'>Home</a></li>
-      <li class='hidden lg:block'><a href='/' class='py-4 px-2 font-semibold hover:text-main-1'>About</a></li>
+      <li class='hidden lg:block'><a href='/' class='navlink py-4 px-2 font-semibold hover:text-main-1'>Home</a></li>
+      <li class='hidden lg:block'><a href='#about' class='py-4 px-2 font-semibold hover:text-main-1'>About</a></li>
       <li class='hidden lg:block'>
-        <a href='/' class='py-4 px-2 font-semibold hover:text-main-1'>Portfolio</a>
+        <a href='#portfolio' class='py-4 px-2 font-semibold hover:text-main-1'>Portfolio</a>
       </li>
-      <li class='hidden lg:block'><a href='/contact' class='py-4 px-2 font-semibold hover:text-main-1'>Contact</a></li>
+      <li class='hidden lg:block'>
+        <a href='/contact' class='navlink py-4 px-2 font-semibold hover:text-main-1'>Contact</a>
+      </li>
       <li class='lg:hidden h-6 w-6'>
         <button class='h-full w-full' id='menuBtn' aria-label='toggle-menu'>
           <Icon name='mdi:menu' />
         </button>
       </li>
-        <li class='h-6 w-6'>
+      <li class='h-6 w-6'>
         <button id='themeBtn' class='h-full w-full' aria-label='toggle-theme'>
           <Icon name='mdi:white-balance-sunny' class='hover:text-main-1 dark:hidden' />
           <Icon name='bi:moon-fill' class='hover:text-main-1 hidden dark:block' />
@@ -80,9 +82,8 @@ import { Icon } from 'astro-icon'
       mobileMenu.classList.remove('-translate-x-0', 'opacity-100')
     }
   })
-  const links = document.querySelectorAll('li a')
+  const links = document.querySelectorAll('.navlink')
   links.forEach((link: HTMLAnchorElement) => {
     if (link.pathname === window.location.pathname) link.classList.add('text-main-1')
   })
 </script>
-
