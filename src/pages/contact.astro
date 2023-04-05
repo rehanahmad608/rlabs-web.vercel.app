@@ -119,7 +119,7 @@ import { Icon } from 'astro-icon'
     document.getElementById('btnLoading').classList.remove('hidden')
     document.getElementById('btnText').classList.add('hidden')
     try {
-      const res = await fetch('/', {
+      const res = await fetch('https://rlabs-backend.vercel.app/api/email', {
         method: 'post',
         headers: {
           'Content-Type': 'application/json',
