@@ -26,11 +26,10 @@ import { Icon } from 'astro-icon'
       We are a diverse compostion of artists, design enthusaists, psychologists, and technologists which are constantly
       growing and led by a core silicon valley dream team.
     </p>
-    <div class='team-grid'>
+    <div class='team-grid grid grid-cols-2'>
       <div class='flex-1'>
         <div class='flex justify-center'>
-          <img src='/Harris.png' 
-          alt='' />
+          <img src='/Harris.png' alt='' />
         </div>
         <h3 class='text-2xl font-bold mt-2'>
           <span class='text-2xl'> Harris Ahmed</span>
@@ -86,8 +85,7 @@ import { Icon } from 'astro-icon'
       </div>
       <div class='flex-1'>
         <div class='flex justify-center'>
-          <img src='/Rehan.png' width="250" height="auto"
-           alt='' />
+          <img src='/Rehan.png' width='250' height='auto' alt='' />
         </div>
         <h3 class='text-2xl font-bold mt-2'>
           <span class='text-2xl'> Rehan Ahmad</span>
@@ -101,7 +99,7 @@ import { Icon } from 'astro-icon'
       </div>
       <div class='flex-1'>
         <div class='flex justify-center'>
-          <img src='/Fiza.png' width="250" height="auto" alt='' />
+          <img src='/Fiza.png' width='250' height='auto' alt='' />
         </div>
         <h3 class='text-2xl font-bold mt-2'>
           <span class='text-2xl'> Fiza Azam</span>
@@ -115,7 +113,7 @@ import { Icon } from 'astro-icon'
       </div>
       <div class='flex-1'>
         <div class='flex justify-center'>
-          <img src='/Yumna.png' width="250" height="auto" alt='' />
+          <img src='/Yumna.png' width='250' height='auto' alt='' />
         </div>
         <h3 class='text-2xl font-bold mt-2'>
           <span class='text-2xl'> Yumna Babar</span>
@@ -132,32 +130,34 @@ import { Icon } from 'astro-icon'
 </section>
 
 <style>
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-  }
-  .team-grid :nth-child(1) {
-    grid-area: 1 / 1 / 2 / 3;
-  }
-  .team-grid :nth-child(2) {
-    grid-area: 1 / 3 / 2 / 5;
-  }
-  .team-grid :nth-child(3) {
-    grid-area: 1 / 5 / 2 / 7;
-  }
-  .team-grid :nth-child(4) {
-    grid-area: 1 / 7 / 2 / 9;
-  }
-  .team-grid :nth-child(5) {
-    grid-area: 2 / 2 / 3 / 4;
-  }
-  .team-grid :nth-child(6) {
-    grid-area: 2 / 4 / 3 / 6;
-  }
-  .team-grid :nth-child(7) {
-    grid-area: 2 / 6 / 3 / 8;
+  @media (min-width: 640px) {
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 2rem;
+      grid-row-gap: 2rem;
+    }
+    .team-grid :nth-child(1) {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    .team-grid :nth-child(2) {
+      grid-area: 1 / 3 / 2 / 5;
+    }
+    .team-grid :nth-child(3) {
+      grid-area: 1 / 5 / 2 / 7;
+    }
+    .team-grid :nth-child(4) {
+      grid-area: 1 / 7 / 2 / 9;
+    }
+    .team-grid :nth-child(5) {
+      grid-area: 2 / 2 / 3 / 4;
+    }
+    .team-grid :nth-child(6) {
+      grid-area: 2 / 4 / 3 / 6;
+    }
+    .team-grid :nth-child(7) {
+      grid-area: 2 / 6 / 3 / 8;
+    }
   }
 </style>
