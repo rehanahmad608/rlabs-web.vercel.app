@@ -5,10 +5,15 @@ import { Icon } from 'astro-icon'
 <nav class='fixed w-full top-0 z-10 bg-light-1 dark:bg-dark-1 border-b border-border'>
   <div class='flex items-center justify-between px-4 xl:max-w-6xl 2xl:max-w-7xl lg:max-w-4xl md:max-w-2xl mx-auto'>
     <a href='/' class='py-4 flex items-center space-x-0.5'>
-      <div class='text-black dark:text-white text-3xl'>
-        reminisce<span
-          class='[-webkit-background-clip:text] bg-gradient-to-tr from-main-3 via-main-4 to-main-2 text-transparent'
+      <div
+  style="font-family: 'Lekton', sans-serif;"
+  class="[-webkit-background-clip:text] bg-gradient-to-tr from-main-3 via-main-4 to-main-2 text-transparent text-3xl"
+> r<span
+          class='font-lekton text-black dark:text-white'
           >labs</span
+        ><span style="margin-left: 4px;"
+          class='text-black text-sm dark:text-white '
+          ><em>immersive</em></span
         >
       </div>
     </a>
@@ -26,12 +31,12 @@ import { Icon } from 'astro-icon'
           <Icon name='mdi:menu' />
         </button>
       </li>
-      <li class='h-6 w-6'>
+      <!-- <li class='h-6 w-6'>
         <button id='themeBtn' class='h-full w-full' aria-label='toggle-theme'>
           <Icon name='mdi:white-balance-sunny' class='hover:text-main-1 dark:hidden' />
           <Icon name='bi:moon-fill' class='hover:text-main-1 hidden dark:block' />
         </button>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>
@@ -41,9 +46,9 @@ import { Icon } from 'astro-icon'
 >
   <div class='border-b border-border py-4 flex justify-between items-center px-4'>
     <a href='/' class='flex items-center space-x-0.5'>
-      <div class='text-black dark:text-white text-3xl font-bold'>
-        reminisce<span
-          class='[-webkit-background-clip:text] bg-gradient-to-tr from-main-3 via-main-4 to-main-2 text-transparent'
+      <div class='[-webkit-background-clip:text] bg-gradient-to-tr from-main-3 via-main-4 to-main-2 text-transparent'>
+        r<span
+          class='text-white'
           >labs</span
         >
       </div>

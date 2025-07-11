@@ -3,32 +3,35 @@ import Layout from '../layouts/Layout.astro'
 import { Icon } from 'astro-icon'
 ---
 
-<Layout title='Contact Us | ReminisceLabs'>
+<Layout title='Contact Us | rlabs'>
   <section class='py-14'>
     <div class='dark:bg-dark-3 px-4 py-1 rounded-lg font-bold w-max mx-auto mb-3'>
       <span class='[-webkit-background-clip:text] bg-gradient-to-tr from-main-3 via-main-4 to-main-2 text-transparent'>
         Contact Us
       </span>
+    
+    
     </div>
+    <br />
     <h1 class='text-4xl font-bold mb-6 dark:text-white text-black text-center'>We'd Love To Hear From You</h1>
-    <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10'>
+    <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-10'>
       <div class='bg-light-1 dark:bg-dark-4 py-5 px-8 rounded-lg hover:-translate-y-1 duration-300'>
         <Icon name='mdi:phone' class='h-10 w-10 text-main-1 mb-2' />
         <h2 class='text-black dark:text-white font-semibold text-lg mb-2'>Contact Phone Number</h2>
-        <p>US: <a href='tel:+12693593308' class='hover:text-main-1 hover:underline'>+1 269 359 3308</a></p>
+        <p>EU: <a href='tel:+4796842524' class='hover:text-main-1 hover:underline'>+47 968 42524</a></p>
       </div>
       <div class='bg-light-1 dark:bg-dark-4 py-5 px-8 rounded-lg hover:-translate-y-1 duration-300'>
         <Icon name='mdi:email' class='h-10 w-10 text-main-1 mb-2' />
         <h2 class='text-black dark:text-white font-semibold text-lg mb-2'>Email Address</h2>
-        <a href='contact@reminiscelabs.com' class='hover:text-main-1 hover:underline'
-          >contact@reminiscelabs.com</a
+        <a href='contact@rlabsimmersive.com' class='hover:text-main-1 hover:underline'
+          >contact@rlabsimmersive.com</a
         >
       </div>
-      <div class='bg-light-1 dark:bg-dark-4 py-5 px-8 rounded-lg hover:-translate-y-1 duration-300'>
-        <Icon name='mdi:account-supervisor' class='h-10 w-10 text-main-1 mb-2' />
-        <h2 class='text-black dark:text-white font-semibold text-lg mb-2'>Social</h2>
-        <div class='flex space-x-5'>
-          <a href='/' target='_blank' aria-label='facebook'>
+      <!-- <div class='bg-light-1 dark:bg-dark-4 py-5 px-8 rounded-lg hover:-translate-y-1 duration-300'> -->
+        <!-- <Icon name='mdi:account-supervisor' class='h-10 w-10 text-main-1 mb-2' /> -->
+        <!-- <h2 class='text-black dark:text-white font-semibold text-lg mb-2'>Social</h2> -->
+        <!-- <div class='flex space-x-5'> -->
+          <!-- <a href='/' target='_blank' aria-label='facebook'>
             <Icon name='mdi:facebook' class='h-6 w-6' />
           </a>
           <a href='/' target='_blank' aria-label='twitter'>
@@ -38,15 +41,15 @@ import { Icon } from 'astro-icon'
             <Icon name='mdi:linkedin' class='h-6 w-6' />
           </a>
           <a href='/' target='_blank' aria-label='instagram'>
-            <Icon name='mdi:instagram' class='h-6 w-6' />
-          </a>
+            <Icon name='mdi:instagram' class='h-6 w-6' /> -->
+          <!-- </a>  -->
           <!-- <a href='/' target='_blank' aria-label='youtube'>
             <Icon name='mdi:youtube' class='h-6 w-6' />
           </a> -->
         </div>
       </div>
     </div>
-    <h1 class='text-4xl font-bold mb-6 dark:text-white text-black text-center'>Contact Form</h1>
+  <h1 class='text-4xl font-bold mb-6 dark:text-white text-black text-center'>Contact Form</h1>
     <form class='grid grid-cols-1 gap-x-2 gap-y-4'>
       <input
         type='text'
@@ -87,9 +90,9 @@ import { Icon } from 'astro-icon'
         <Icon name='mdi:loading' class='h-6 w-6 animate-spin hidden' id='btnLoading' />
         <span id='btnText'>Submit</span>
       </button>
-      <p id='success' class='hidden'>Email send! Thank you for contacting us!</p>
+      <p id='success' class='hidden'>Email sent! Thank you for contacting us!</p>
       <p id='fail' class='text-danger hidden'>Failed to sent email! Please try again after some time!</p>
-    </form>
+    </form> 
   </section>
 </Layout>
 
